@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+html,body{
+	width: 100%;
+	background: #f6f6f6;
+}
+ul,ol{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+img{
+	display: block;
+}
+b, em, i, strong{
+	font-style: normal;
+    font-weight: 400;
+}
+.new_bg_fff{
+	background: #fff;
+	min-width: 1320px;
+    margin: 0 auto;
+    .login_main{
+    	width: 1000px;
+    	margin: 0 auto;
+    	.loginHeader{
+    		padding: 25px 0;
+    		overflow: hidden;
+    		.loginLogo {
+			    float: left;
+			    a{
+			    	text-decoration: none;
+				    cursor: pointer;
+				    color: #333;
+				    outline: 0;
+				    img{
+				    	display: block;
+    					width: 166px;
+				    }
+			    }
+			}
+			.logintTitleText {
+			    display: block;
+			    float: left;
+			    font-size: 25px;
+			    margin-left: 25px;
+			    margin-top: 25px;
+			}
+    	}
+    }
+    .loginBanner{
+    	height: 550px;
+    	.loginBox {
+		    width: 1000px;
+		    margin: 0 auto;
+		    a{
+		    	color: #666;
+		    }
+		    .LoginPicUrl{
+			    width: 660px;
+			    height: 550px;
+			    display: block;
+			    float: left;
+			}
+			.loginBoxM{
+				width: 340px;
+			    height: 394px;
+			    background: #fff;
+			    float: right;
+			    margin-top: 78px;
+			    position: relative;
+			    -webkit-box-shadow: 0 5px 50px rgba(0, 0, 0, .3);
+			    -moz-box-shadow: 0 5px 50px rgba(0, 0, 0, .3);
+			    box-shadow: 0 5px 50px rgba(0, 0, 0, .3);
+			    .LoginT{
+			    	border-bottom: 1px solid #eee;
+    				overflow: hidden;
+    				a{
+    					display: block;
+					    width: 50%;
+					    height: 55px;
+					    line-height: 55px;
+					    text-align: center;
+					    float: left;
+					    font-size: 16px;
+					    background: url(../img/line.jpg) no-repeat right center;
+    				}
+    				.on{
+    					font-weight: bold;
+    					color: #f70;
+    				}
+			    }
+			    .loginTabBox{
+			    	.loginForm{
+			    		padding-top: 13px;
+			    		li {
+						    overflow: hidden;
+						    position: relative;
+						    border: 1px solid #ddd;
+						    margin: 20px 20px 0 20px;
+						    i{
+						    	width: 42px;
+							    height: 42px;
+							    line-height: 42px;
+							    display: block;
+							    float: left;
+							    text-align: center;
+							    font-size: 18px;
+							    background: #fafafa;
+							    border-right: 1px solid #ddd;
+							    color: #999;
+						    }
+						    input{
+						    	width: 235px;
+							    padding: 0 10px;
+							    border: none;
+							    background: none;
+							    height: 42px;
+							    line-height: 42px;
+							    float: right;
+							    color: #444;
+							    font-size: 15px;
+						    }
+						}
+			    	}
+			    	.login_a{
+			    		margin: 20px;
+					    overflow: hidden;
+					    font-size: 13px;
+					    i{
+					    	float: right;
+					    	:hover{
+								color: #f70;
+							}
+					    }
+
+			    	}
+
+			    	.loginBtn {
+					    padding: 5px 20px 0 20px;
+					    input{
+					    	display: block;
+						    width: 100%;
+						    height: 44px;
+						    line-height: 44px;
+						    background: #f70;
+						    color: #fff;
+						    font-size: 18px;
+						    border: none;
+						    -webkit-border-radius: 3px;
+						    -moz-border-radius: 3px;
+						    border-radius: 3px;
+						    cursor: pointer;
+					    }
+					}
+					.login_b {
+					    width: 100%;
+					    height: 55px;
+					    position: absolute;
+					    left: 0;
+					    bottom: 0;
+					    background: #fafafa;
+					    border-top: 1px solid #eee;
+					    a{
+					    	color: #666;
+					    }
+					    .rBtn {
+						    float:right;
+						    height: 55px;
+						    line-height: 55px;
+						    padding: 0 20px;
+						    i {
+						    	width: 64px;
+						    	height: 20px;
+						    	background: red;
+							    img{
+							    	float: left;
+							    	margin-top: 20px;
+							    	padding-right: 5px;
+							    	width: 18px;
+							    	height: 20px;
+							    }
+							}
+						}
+						.rBtn:hover{
+							color: #f70;
+						}
+						.clear {
+						    clear: both;
+						}
+					}
+			    }
+			}
+		}
+    }
+    .info{
+		text-align: center;
+	    margin: 25px auto 20px auto;
+	    color: #999;
+	    width: 1240px;
+	    p{
+	    	line-height: 2;
+	    	font-size: 13px;
+	    }
+	    a{
+	    	color: #999;
+	    }
+	    .menu{
+	    	a{
+	    		margin-right: 15px;
+			    padding-right: 15px;
+			    background: url(../img/lines.jpg) no-repeat right center;
+			    font-size: 13px;
+	    	}
+	    	a:hover{
+	    		color: #666;
+	    	}
+	    	a:last-child {
+			    background: 0 0;
+		    }
+		}
+	}
+}

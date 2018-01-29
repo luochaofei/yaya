@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>丫丫网—-会员注册</title>
+	<link rel="stylesheet" type="text/css" href="css/regist.css" />
+</head>
+<body>
+	<div class="new_bg_fff">
+		<div class="login_main">
+			<div class="loginHeader">
+				<div class="loginLogo">
+					<a href="#">
+						<img src="img/6bfd.png">
+					</a>
+				</div>
+				<b class="logintTitleText">会员注册</b>
+				<i>我已经注册，现在<a href="regists.html">【登录】</a></i>
+			</div>
+		</div>
+		<div class="login_rMain">
+			<div class="l_rbox">
+				<ul class="login_r_ul">
+					<li>
+						<span>手机号</span>
+						<input type="text" name="username" id="mobliePhone" class="txt" placeholder="输入手机接收注册验证码">
+						<div class="clear"></div>
+					</li>
+					<span id="mobliePhoneMsg" style="display: none;"></span>
+					<li>
+						<span>图片验证码</span>
+						<input type="text" class="txt" placeholder="请输入图片验证码">
+						<div class="dd"></div>
+						<div id="verify-code"></div>
+						<script>
+							var oVerifyCode = document.getElementById('verify-code');
+
+							oVerifyCode.innerHTML = createVerifyCode();
+
+							oVerifyCode.onclick = function () {
+								oVerifyCode.innerHTML = createVerifyCode();
+							};
+
+
+							// 生成随机字符串
+							function createVerifyCode() {
+								var sSeeds = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+
+								var sVerify = '';
+								for(var i = 0; i < 4; i++) {
+									var iIndex = Math.floor(Math.random() * sSeeds.length);
+									sVerify += "&nbsp;" + sSeeds[iIndex] + "&nbsp;";
+								}
+
+								return sVerify;
+							}
+						</script>
+						<div class="clear"></div>
+					</li>
+					<li class="oLi">
+						<span>短信验证码</span>
+						<input type="text" class="txt" placeholder="请查收您的短信验证码">
+						<button class="l_mag_btn">获取验证码</button>
+						<div class="clear"></div>
+					</li>
+					<li class="oLi">
+						<span>设置密码</span>
+						<input type="password" id="password" class="txt" placeholder="建议至少两种以上字符组合">
+						<div class="clear"></div>
+					</li>
+					<span id="passMsg" style="display: none;"></span>
+					<li class="oLi">
+						<span>确认密码</span>
+						<input type="password" id="repassword" class="txt" placeholder="再次确认密码">
+						<div class="clear"></div>
+					</li>
+					<span id="repassMsg" style="display: none;"></span>
+					<p class="xieyi">点击注册，表示您同意丫丫网<a href="#">《服务协议》</a></p>
+					<input type="submit" class="sub" value="同意协议并注册">
+				</ul>
+			</div>
+		</div>
+		<div class="info">
+			<!-- 关于丫丫 -->
+			<p class="menu">
+				<a href="#" style="color:;">关于丫丫</a>
+				<a href="#" style="color:;">会员俱乐部</a>
+				<a href="#" style="color:;">高薪诚聘</a>
+				<a href="#" style="color:;">业务合作</a>
+				<a href="#" style="color:;">会员积分</a>
+				<a href="#" style="color:;">投诉建议</a>
+			</p>
+			<!-- 版权 -->
+			<p> 		版权所有 丫丫网 © Copyright 2007 - 2016 www.yaya.cn All Rights Reserved.&nbsp;&nbsp;&nbsp;滇ICP备11005817号-7 &nbsp;&nbsp;&nbsp;滇公网安备53011102000207号</p>
+			<p>增值电信业务经营许可证：滇B2-20160011</p>
+		</div>
+	</div>
+</body>
+</html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/regist.js"></script>

@@ -1,0 +1,255 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+html,body{
+	width: 100%;
+	background: #f6f6f6;
+}
+ul,ol{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+img{
+	display: block;
+}
+b, em, i, strong{
+	font-style: normal;
+    font-weight: 400;
+}
+.new_bg_fff{
+	background: #fff;
+	min-width: 1320px;
+    margin: 0 auto;
+    .login_main{
+    	width: 1000px;
+    	margin: 0 auto;
+    	.loginHeader{
+    		padding: 25px 0;
+    		overflow: hidden;
+    		.loginLogo {
+			    float: left;
+			    a{
+			    	text-decoration: none;
+				    cursor: pointer;
+				    color: #333;
+				    outline: 0;
+				    img{
+				    	display: block;
+    					width: 166px;
+				    }
+			    }
+			}
+			.logintTitleText {
+			    display: block;
+			    float: left;
+			    font-size: 25px;
+			    margin-left: 25px;
+			    margin-top: 25px;
+			}
+			i{
+			    float:right;
+			    display: block;
+			    margin-top: 40px;
+			    color: #666;
+			    font-size: 14px;
+			    a{
+			    	color: #f70;
+
+			    }
+			}
+    	}
+    }
+    .login_rMain{
+    	background: #f7f7f7;
+    	overflow: hidden;
+    	.l_rbox {
+		    width: 1000px;
+		    margin: 60px auto;
+		    background: #fff;
+		    border: 2px solid #eee;
+		    .login_r_ul {
+			    width: 400px;
+			    background: #fff;
+			    padding: 30px 0 50px 0;
+			    margin: 0 auto;
+			    position: relative;
+			    input{
+			    	height: 45px;
+				    line-height: 45px;
+				    border: none;
+				    background: none;
+				    outline: none;
+			    }
+			    span{
+			    	height: 45px;
+				    line-height: 45px;
+				    border: none;
+				    background: none;
+			    }
+			    li{
+			    	border: 1px solid #ddd;
+				    margin-top: 20px;
+				    position: relative;
+				    span{
+				    	display: block;
+					    float: left;
+					    width: 110px;
+					    text-align: center;
+					    background: #f7f7f7;
+					    border-right: 1px solid #ddd;
+					    font-size: 15px;
+					    color: #444;
+				    }
+				    :active span{
+				    	background: #fff9f3;
+					    color: #f70;
+					    border-color: #f70;
+				    }
+				    .clear {
+					    clear: both;
+					}
+				    .txt{
+				    	width: 182px;
+					    padding: 0;
+					    float:left;
+					    margin-left: 10px;
+					    font-size: 15px;
+				    }
+				    .dd{
+				    	width: 1px;
+				    	height: 14px;
+					    display: block;
+					    position: absolute;
+					    right: 115px;
+					    top: 15px;;
+					    background: #fff url(../img/line.jpg) no-repeat left center;
+				    }
+				    #verify-code{
+				    	width: 88px;
+				    	height: 35px;
+				    	margin: 5px 5px 5px 0;
+				    	border: none;
+				    	font-size: 18px;
+				    	line-height: 35px;
+				    	text-align: center;
+				    	color: pink;
+				    	cursor: pointer;
+				    	float: right;
+				    	background: #40c7ee;
+				    }
+				    .l_mag_btn {
+					    padding: 0 20px;
+					    display: block;
+					    position: absolute;
+					    right: 0;
+					    top: 0;
+					    background: #fff url(../img/line.jpg) no-repeat left center;
+					    cursor: pointer;
+					    font-size: 15px;
+					    height: 45px;
+					    line-height: 45px;
+					    border: none;
+				    }
+				}
+				#mobliePhoneMsg{
+				 	position: absolute;
+					display: inline-block;
+					width: 170px;
+					height: 30px;
+					background: yellowgreen;
+					color: #000000;
+					border-radius: 5px;
+					text-align: center;
+					line-height: 30px;
+					z-index: 1000;
+					right:-180px;
+					top:60px;
+				}
+				#passMsg{
+				 	position: absolute;
+					display: inline-block;
+					width: 170px;
+					height: 30px;
+					background: yellowgreen;
+					color: #000000;
+					border-radius: 5px;
+					text-align: center;
+					line-height: 30px;
+					z-index: 1000;
+					right:-180px;
+					bottom:240px;
+				}
+				#repassMsg{
+				 	position: absolute;
+					display: inline-block;
+					width: 170px;
+					height: 30px;
+					background: yellowgreen;
+					color: #000000;
+					border-radius: 5px;
+					text-align: center;
+					line-height: 30px;
+					z-index: 1000;
+					right:-180px;
+					bottom:170px;
+				}
+				.xieyi{
+					color: #666;
+					font-size: 14px;
+    				margin: 20px 0 30px 0;
+    				a{
+    					color: #f70;
+    				}
+				}
+				.sub{
+					height: 45px;
+				    line-height: 45px;
+				    border: none;
+				    display: block;
+				    width: 100%;
+				    background: #f70 !important;
+				    color: #fff;
+				    font-size: 18px;
+				    cursor: pointer;
+				    -webkit-border-radius: 3px;
+				    -moz-border-radius: 3px;
+				    border-radius: 3px;
+				}
+			}
+		}
+    }
+    .info{
+		text-align: center;
+	    margin: 25px auto 20px auto;
+	    color: #999;
+	    width: 1240px;
+	    p{
+	    	line-height: 2;
+	    	font-size: 13px;
+	    }
+	    a{
+	    	color: #999;
+	    }
+	    .menu{
+	    	a{
+	    		margin-right: 15px;
+			    padding-right: 15px;
+			    background: url(../img/lines.jpg) no-repeat right center;
+			    font-size: 13px;
+	    	}
+	    	a:hover{
+	    		color: #666;
+	    	}
+	    	a:last-child {
+			    background: 0 0;
+		    }
+		}
+	}
+}
+
